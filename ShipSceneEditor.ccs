@@ -1,0 +1,44 @@
+<Solution>
+  <PropertyGroup Name="ShipSceneEditor" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="NewCustomFont">
+          <Folder Name="fonts">
+            <Fnt Name="Roboto_Red.fnt" />
+            <Fnt Name="Roboto_wheel.fnt" />
+            <Fnt Name="Roboto_Yellow.fnt" />
+            <TTF Name="Roboto-Bold.ttf" />
+            <Fnt Name="UTM_Erie_Black_text.fnt" />
+          </Folder>
+          <Fnt Name="myFontHelloWorld.fnt" />
+          <Fnt Name="SpecialFontKuKulKan.fnt" />
+          <Fnt Name="YellowFontGreen.fnt" />
+        </Folder>
+        <Folder Name="NewMenu">
+          <Image Name="BlankMenuButton_ove.png" />
+          <Image Name="BlankMenuButton_up.png" />
+          <Image Name="InterLogoBitmapData.png" />
+          <Image Name="logo.png" />
+          <Image Name="LogoBitmapData.png" />
+          <Image Name="SubLogoBitmapData.png" />
+          <Image Name="TitlesBackdrop.jpg" />
+        </Folder>
+        <Folder Name="NewMissionSceneResource">
+          <Image Name="BackdropNebula.png" />
+          <Image Name="backtotopnormal.png" />
+          <Image Name="backtotoppressed.png" />
+          <Image Name="HudBarBorderEnemyHealth.png" />
+          <Image Name="HudBarBorderHealth.png" />
+          <Image Name="HudBarBorderShield.png" />
+          <Image Name="sliderProgress2.png" />
+        </Folder>
+        <Folder Name="NewParticle">
+          <PlistParticleFile Name="mainMenuScene_particle.plist" />
+        </Folder>
+        <Image Name="HelloWorld.png" />
+        <Project Name="MainScene.csd" Type="Scene" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
