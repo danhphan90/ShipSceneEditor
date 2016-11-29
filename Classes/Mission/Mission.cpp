@@ -37,7 +37,8 @@ void Mission::start()
 
 void Mission::clear()
 {
-    if (static_cast<Boss*>(this->getChildByName("Boss"))){
+    auto _boss = (Boss*)this->getChildByName("Boss");
+    if (_boss != NULL){
         static_cast<Boss*>(this->getChildByName("Boss"))->clear();
     }
     
