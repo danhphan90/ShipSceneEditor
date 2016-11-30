@@ -29,6 +29,8 @@ Scene* HelloWorld::createScene()
 HelloWorld::HelloWorld(){
     mission = NULL;
     _indexWave = 1;
+    
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("Enemy/EnemySpriteEditor.plist");
 }
 
 // on "init" you need to initialize your instance
@@ -131,18 +133,24 @@ void HelloWorld::update(float dt){
     }
 }
 
-Button* HelloWorld::createButtonWave(){
-    auto _button = Button::create();
-    _button->setScale9Enabled(true);
-    _button->loadTextures(srcPNG_backtotopnormal,srcPNG_backtotoppressed,srcPNG_backtotopnormal);
-    _button->setContentSize(Size(80,50));
-    _button->setTag(_indexWave);
+Layout* HelloWorld::createButtonWave(){
+    auto _layout = Layout::create();
+    _layout->setContentSize(Size(listWave->getContentSize().width,60));
+    
+    auto _button = Button::create(srcPNG_backtotopnormal,srcPNG_backtotoppressed,srcPNG_backtotopnormal);
     _button->setTitleFontName(srcTFF_Roboto_Bold);
-    _button->setTitleFontSize(20);
+    _button->setTag(_indexWave);
+    _button->setScale9Enabled(true);
+    _button->setContentSize(Size(120,50));
+    _button->setTitleFontSize(18);
     _button->setName(StringUtils::format("Wave %zd",_indexWave));
     _button->setTitleText(StringUtils::format("Wave %zd",_indexWave));
+    _button->setPosition(_layout->getContentSize()/2);
+    _layout->addChild(_button);
     
-    return _button;
+    _indexWave++;
+    
+    return _layout;
 }
 
 void HelloWorld::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType type){
@@ -169,6 +177,11 @@ void HelloWorld::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType ty
                     break;
                     
                 case PanelChild::tagRemove :
+                    if (listWave->getItems().size() > 0){
+                        listWave->removeLastItem();
+                        _indexWave--;
+                    }
+                  
                     break;
 
                     

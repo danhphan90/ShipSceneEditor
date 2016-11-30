@@ -54,7 +54,7 @@ private:
     void modifyLocalVariable();
     void modifyButtonEvent();
     
-    Button* createButtonWave();
+    Layout* createButtonWave();
     
     
     void update(float dt);
