@@ -49,6 +49,8 @@
 		521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6319F0C34300D177D7 /* Default-736h@3x.png */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
+		893765351DEE648100704A87 /* NewMenu in Resources */ = {isa = PBXBuildFile; fileRef = 893765331DEE648100704A87 /* NewMenu */; };
+		893765361DEE648100704A87 /* NewCustomFont in Resources */ = {isa = PBXBuildFile; fileRef = 893765341DEE648100704A87 /* NewCustomFont */; };
 		89D68E5B1DEBDFD7002C7ED8 /* Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89D68E531DEBDFD7002C7ED8 /* Path.cpp */; };
 		89D68E5C1DEBDFD7002C7ED8 /* MissionMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89D68E561DEBDFD7002C7ED8 /* MissionMap.cpp */; };
 		89D68E5D1DEBDFD7002C7ED8 /* Mission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89D68E591DEBDFD7002C7ED8 /* Mission.cpp */; };
@@ -127,6 +129,9 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		893765331DEE648100704A87 /* NewMenu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewMenu; sourceTree = "<group>"; };
+		893765341DEE648100704A87 /* NewCustomFont */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewCustomFont; sourceTree = "<group>"; };
+		893765371DEEE0F100704A87 /* ResourcesNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourcesNew.h; sourceTree = "<group>"; };
 		89D68E531DEBDFD7002C7ED8 /* Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Path.cpp; sourceTree = "<group>"; };
 		89D68E541DEBDFD7002C7ED8 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
 		89D68E561DEBDFD7002C7ED8 /* MissionMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MissionMap.cpp; sourceTree = "<group>"; };
@@ -140,7 +145,6 @@
 		89D68E681DEBE0B5002C7ED8 /* Enemy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Enemy; sourceTree = "<group>"; };
 		89D68E691DEBE0B5002C7ED8 /* Bullet */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bullet; sourceTree = "<group>"; };
 		89D68E6A1DEBE0B5002C7ED8 /* BossImage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BossImage; sourceTree = "<group>"; };
-		89D68E6E1DEBE1DC002C7ED8 /* EnumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumManager.h; sourceTree = "<group>"; };
 		89D68E701DEBE2FD002C7ED8 /* Lightning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lightning.cpp; sourceTree = "<group>"; };
 		89D68E711DEBE2FD002C7ED8 /* Lightning.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Lightning.hpp; sourceTree = "<group>"; };
 		89D68E721DEBE2FD002C7ED8 /* LightningSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightningSprite.cpp; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				893765331DEE648100704A87 /* NewMenu */,
+				893765341DEE648100704A87 /* NewCustomFont */,
 				89D68E911DEC0A02002C7ED8 /* NewMissionSceneResource */,
 				89D68E8F1DEC09FA002C7ED8 /* MainScene.csb */,
 				89D68E8D1DEBE91A002C7ED8 /* CustomSprite */,
@@ -294,11 +300,11 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				893765371DEEE0F100704A87 /* ResourcesNew.h */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
-				89D68E6E1DEBE1DC002C7ED8 /* EnumManager.h */,
 				89D68E7E1DEBE41E002C7ED8 /* Enemy */,
 				89D68E7D1DEBE39B002C7ED8 /* API */,
 				89D68E6F1DEBE2FD002C7ED8 /* CustomSprite */,
@@ -544,10 +550,12 @@
 			files = (
 				89D68E901DEC09FA002C7ED8 /* MainScene.csb in Resources */,
 				89D68E921DEC0A02002C7ED8 /* NewMissionSceneResource in Resources */,
+				893765361DEE648100704A87 /* NewCustomFont in Resources */,
 				89D68E6B1DEBE0B5002C7ED8 /* Enemy in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				89D68E8E1DEBE91A002C7ED8 /* CustomSprite in Resources */,
 				89D68E6C1DEBE0B5002C7ED8 /* Bullet in Resources */,
+				893765351DEE648100704A87 /* NewMenu in Resources */,
 				89D68E6D1DEBE0B5002C7ED8 /* BossImage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

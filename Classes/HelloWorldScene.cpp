@@ -1,7 +1,7 @@
 #include "HelloWorldScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
-
+#include "ResourcesNew.h"
 USING_NS_CC;
 
 using namespace cocostudio::timeline;
@@ -28,6 +28,7 @@ Scene* HelloWorld::createScene()
 
 HelloWorld::HelloWorld(){
     mission = NULL;
+    _indexWave = 1;
 }
 
 // on "init" you need to initialize your instance
@@ -83,6 +84,11 @@ void HelloWorld::saveChildToLocalVariable(){
     
     btnPanel_Start = (Button*)panel->getChildByTag(PanelChild::tagStart);
     btnPanel_Reset = (Button*)panel->getChildByTag(PanelChild::tagReset);
+    
+    btnPanel_Add = (Button*)panel->getChildByTag(tagAdd);
+    btnPanel_Remove = (Button*)panel->getChildByTag(tagRemove);
+    
+    listWave = (ListView*)panel->getChildByTag(tagListWave);
 }
 
 void HelloWorld::modifyLocalVariable(){
@@ -92,6 +98,8 @@ void HelloWorld::modifyLocalVariable(){
 void HelloWorld::modifyButtonEvent(){
     btnPanel_Start->addTouchEventListener(CC_CALLBACK_2(HelloWorld::callBackButton, this));
     btnPanel_Reset->addTouchEventListener(CC_CALLBACK_2(HelloWorld::callBackButton, this));
+    btnPanel_Add->addTouchEventListener(CC_CALLBACK_2(HelloWorld::callBackButton, this));
+    btnPanel_Remove->addTouchEventListener(CC_CALLBACK_2(HelloWorld::callBackButton, this));
 }
 
 void HelloWorld::onEnterTransitionDidFinish(){
@@ -123,6 +131,20 @@ void HelloWorld::update(float dt){
     }
 }
 
+Button* HelloWorld::createButtonWave(){
+    auto _button = Button::create();
+    _button->setScale9Enabled(true);
+    _button->loadTextures(srcPNG_backtotopnormal,srcPNG_backtotoppressed,srcPNG_backtotopnormal);
+    _button->setContentSize(Size(80,50));
+    _button->setTag(_indexWave);
+    _button->setTitleFontName(srcTFF_Roboto_Bold);
+    _button->setTitleFontSize(20);
+    _button->setName(StringUtils::format("Wave %zd",_indexWave));
+    _button->setTitleText(StringUtils::format("Wave %zd",_indexWave));
+    
+    return _button;
+}
+
 void HelloWorld::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType type){
     auto _button = (Button*)pSender;
     
@@ -140,6 +162,15 @@ void HelloWorld::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType ty
                 case PanelChild::tagReset :
                     stopMission();
                     break;
+                    
+                case PanelChild::tagAdd :
+                    listWave->pushBackCustomItem(createButtonWave());
+                    listWave->forceDoLayout();
+                    break;
+                    
+                case PanelChild::tagRemove :
+                    break;
+
                     
                 default:
                     break;

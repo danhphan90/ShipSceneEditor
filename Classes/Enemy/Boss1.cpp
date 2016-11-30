@@ -41,8 +41,8 @@ bool Boss1::initBoss1(int _hp){
 
 void Boss1::start(){
     
-    float sizeW = Director::getInstance()->getWinSize().width;
-    float sizeH =Director::getInstance()->getWinSize().height;
+    float sizeW = 640;
+    float sizeH = 960;
     
     this->initPosition = Vec2(sizeW/2,sizeH-this->getContentSize().height*2.5);
     auto moveToCenter = MoveTo::create(5, this->initPosition);

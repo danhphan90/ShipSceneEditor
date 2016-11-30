@@ -19,7 +19,10 @@ enum MainSceneChild{
 
 enum PanelChild{
     tagStart = 123,
-    tagReset = 124
+    tagReset = 124,
+    tagAdd = 15,
+    tagRemove = 16,
+    tagListWave = 8
 };
 
 class HelloWorld : public cocos2d::Layer
@@ -37,14 +40,21 @@ private:
     
     ImageView* panel;
     
+    ListView* listWave;
+    
     Button* btnPanel_Start;
     Button* btnPanel_Reset;
+    Button* btnPanel_Add, *btnPanel_Remove;
+    
+    int _indexWave;
     
     void startMission();
     void stopMission();
     void saveChildToLocalVariable();
     void modifyLocalVariable();
     void modifyButtonEvent();
+    
+    Button* createButtonWave();
     
     
     void update(float dt);
