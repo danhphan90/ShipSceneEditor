@@ -28,6 +28,10 @@ enum PropertiesTag{
 
 class WaveLayer : public Layer{
 public:
+    void open();
+    void close();
+    void clear();
+
     CREATE_FUNC(WaveLayer);
     
 private:
@@ -40,13 +44,25 @@ private:
     
     Vector<TextField*> vecField;
     
+    EventListenerTouchOneByOne* _event;
+    
+
     virtual bool init();
     void saveChildToLocalVariable();
     void modifyButtonEvent();
+    void modifyTouchEvent();
+    
+    
     int getValue(PropertiesTag type);
     
     void callBackButton(Ref* pSender, Widget::TouchEventType type);
-
+    
+    
+    bool onTouchBegan(Touch* touch, Event* event);
+   	void onTouchMoved(Touch* touch, Event* event);
+   	void onTouchEnded(Touch* touch, Event* event);
+    
+    void callBackClose();
 };
 
 #endif /* WaveLayer_hpp */

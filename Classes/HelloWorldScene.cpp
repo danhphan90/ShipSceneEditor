@@ -48,14 +48,10 @@ bool HelloWorld::init()
     
     rootNode = CSLoader::createNode("MainScene.csb");
     
-    this->addChild(rootNode,1);
+    this->addChild(rootNode,ZTag::zRootNode);
     this->saveChildToLocalVariable();
     this->modifyLocalVariable();
     this->modifyButtonEvent();
-    
-    auto _waveLayer = WaveLayer::create();
-    
-    this->addChild(_waveLayer,2);
     
     return true;
 }
@@ -68,7 +64,7 @@ void HelloWorld::startMission(){
     Unit::setMissionLayer((Layer*)mission);
     Wave::setMissionlayer((Layer*)mission);
     LightningSprite::loadMissionLayer((Layer*)mission);
-    this->addChild(mission,2);
+    this->addChild(mission,ZTag::zMission);
     
     mission->start();
 
@@ -144,7 +140,9 @@ Layout* HelloWorld::createButtonWave(){
     
     auto _button = WaveButton::create();
     _button->setPosition(_layout->getContentSize()/2);
+    _button->addTouchEventListener(CC_CALLBACK_2(HelloWorld::callBackWaveButton, this));
     _layout->addChild(_button);
+    _layout->setTag(_button->getTag());
     
     return _layout;
 }
@@ -174,8 +172,9 @@ void HelloWorld::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType ty
                     
                 case PanelChild::tagRemove :
                     if (listWave->getItems().size() > 0){
-                        auto _item = (WaveButton*)listWave->getItems().back();
-                        _item->clear();
+                        auto _layout = (WaveButton*)listWave->getItems().back();
+                        auto _waveButton = (WaveButton*)_layout->getChildByTag(_layout->getTag());
+                        _waveButton->clear();
                         listWave->removeLastItem();
                     }
                   
@@ -187,6 +186,32 @@ void HelloWorld::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType ty
             }
             
             
+            break;
+        }
+            
+        default:
+            break;
+    }
+}
+
+void HelloWorld::callBackWaveButton(cocos2d::Ref *pSender, Widget::TouchEventType type){
+    auto _button = (WaveButton*)pSender;
+    
+    if (_button == NULL) return;
+    
+    
+    switch (type) {
+        case cocos2d::ui::Widget::TouchEventType::ENDED:
+        {
+            auto _panelInfo = _button->panelInfo;
+            if (_panelInfo != NULL){
+                _panelInfo->setNormalizedPosition(Vec2(0.35,0.32));
+                this->addChild(_panelInfo,ZTag::zPanelInfo);
+                _panelInfo->open();
+                
+                _panelInfo->setScale(0.3);
+                _panelInfo->runAction(EaseElasticOut::create(ScaleTo::create(0.5, 1), 0.5));
+            }
             break;
         }
             

@@ -26,6 +26,12 @@ enum PanelChild{
     tagListWave = 8
 };
 
+enum ZTag{
+    zRootNode = 1,
+    zMission = 2,
+    zPanelInfo = 3
+};
+
 class HelloWorld : public cocos2d::Layer
 {
 public:
@@ -63,6 +69,8 @@ private:
     virtual void onEnterTransitionDidFinish();
 
     void callBackButton(Ref* pSender, Widget::TouchEventType type);
+    
+    void callBackWaveButton(Ref* pSender, Widget::TouchEventType type);
 };
 
 #endif // __HELLOWORLD_SCENE_H__

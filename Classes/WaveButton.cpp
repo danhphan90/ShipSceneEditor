@@ -29,9 +29,14 @@ bool WaveButton::init(){
     
     _indexWave++;
     
+    panelInfo = WaveLayer::create();
+    panelInfo->retain();
     return true;
 }
 
 void WaveButton::clear(){
     _indexWave--;
+    
+    panelInfo->clear();
+    panelInfo->release();
 }

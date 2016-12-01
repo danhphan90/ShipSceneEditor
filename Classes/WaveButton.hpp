@@ -10,6 +10,7 @@
 #define WaveButton_hpp
 
 #include "cocos2d.h"
+#include "WaveLayer.hpp"
 #include "ui/CocosGUI.h"
 
 using namespace std;
@@ -18,6 +19,8 @@ using namespace cocos2d::ui;
 
 class WaveButton : public Button{
 public:
+    WaveLayer* panelInfo;
+    
     void clear();
     CREATE_FUNC(WaveButton);
     

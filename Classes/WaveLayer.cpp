@@ -15,6 +15,29 @@ USING_NS_CC;
 
 using namespace cocostudio::timeline;
 
+void WaveLayer::open(){
+    this->setVisible(true);
+    getEventDispatcher()->addEventListenerWithSceneGraphPriority(_event, this);
+}
+
+void WaveLayer::close(){
+    auto _callBackClose = CallFuncN::create(CC_CALLBACK_0(WaveLayer::callBackClose, this));
+    
+    this->runAction(Sequence::create(EaseElasticOut::create(ScaleTo::create(0.5, 0.),0.5),
+                                         _callBackClose, NULL));
+    
+}
+
+
+void WaveLayer::clear(){
+    if (vecField.size() > 0){
+        vecField.clear();
+
+    }
+    _event->release();
+    this->removeAllChildren();
+}
+
 bool WaveLayer::init(){
     
     if (!Layer::init()){
@@ -29,6 +52,7 @@ bool WaveLayer::init(){
     
     saveChildToLocalVariable();
     modifyButtonEvent();
+    modifyTouchEvent();
     return true;
 }
 
@@ -59,11 +83,41 @@ void WaveLayer::modifyButtonEvent(){
     btnShow->addTouchEventListener(CC_CALLBACK_2(WaveLayer::callBackButton, this));
 }
 
+void WaveLayer::modifyTouchEvent(){
+    _event = EventListenerTouchOneByOne::create();
+    _event->onTouchBegan = CC_CALLBACK_2(WaveLayer::onTouchBegan, this);
+    _event->onTouchMoved = CC_CALLBACK_2(WaveLayer::onTouchMoved, this);
+    _event->onTouchEnded = CC_CALLBACK_2(WaveLayer::onTouchEnded, this);
+    _event->setSwallowTouches(true);
+    _event->retain();
+}
+
 int WaveLayer::getValue(PropertiesTag type){
     auto _s = __String::create(vecField.at(type)->getString());
     return _s->intValue();
 }
 
+bool WaveLayer::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event){
+    
+    return true;
+}
+
+void WaveLayer::onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event){
+    
+}
+
+void WaveLayer::onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event){
+    if (!rootNode->getBoundingBox().containsPoint(touch->getLocation())){
+        this->close();
+    }
+}
+
+void WaveLayer::callBackClose(){
+    this->setVisible(false);
+    this->removeFromParent();
+    getEventDispatcher()->removeEventListener(_event);
+    this->setScale(1);
+}
 void WaveLayer::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType type){
     auto _button = (Button*)pSender;
     
