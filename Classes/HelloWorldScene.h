@@ -4,11 +4,12 @@
 #include "cocos2d.h"
 #include <iostream>
 #include "MissionMap.h"
-
 #include "Bullet.h"
 #include "Unit.h"
 #include "Wave.h"
 #include "LightningSprite.hpp"
+#include "WaveLayer.hpp"
+#include "WaveButton.hpp"
 
 using namespace std;
 

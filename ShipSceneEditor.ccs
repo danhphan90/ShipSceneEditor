@@ -38,6 +38,7 @@
         </Folder>
         <Image Name="HelloWorld.png" />
         <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="WaveLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
