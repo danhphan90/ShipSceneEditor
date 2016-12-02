@@ -6,13 +6,13 @@
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="960.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="Image_1" ActionTag="-1851289956" Tag="8" IconVisible="False" PositionPercentYEnabled="True" RightMargin="320.0000" Scale9Enable="True" LeftEage="165" RightEage="165" TopEage="198" BottomEage="198" Scale9OriginX="165" Scale9OriginY="198" Scale9Width="170" Scale9Height="204" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_1" ActionTag="-1851289956" Tag="8" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="1.0000" RightMargin="319.0000" Scale9Enable="True" LeftEage="165" RightEage="165" TopEage="198" BottomEage="198" Scale9OriginX="165" Scale9OriginY="198" Scale9Width="170" Scale9Height="204" ctype="ImageViewObjectData">
             <Size X="640.0000" Y="960.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.0000" Y="480.0000" />
+            <Position X="321.0000" Y="480.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.3333" Y="0.5000" />
+            <PrePosition X="0.3344" Y="0.5000" />
             <PreSize X="0.6667" Y="1.0000" />
             <FileData Type="Normal" Path="NewMissionSceneResource/BackdropNebula.png" Plist="" />
           </AbstractNodeData>
@@ -116,13 +116,13 @@
             <PreSize X="0.3333" Y="1.0000" />
             <FileData Type="Normal" Path="NewMissionSceneResource/backtotoppressed.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="FileNode_1" ActionTag="-680796962" Tag="35" IconVisible="True" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="336.0000" RightMargin="324.0000" TopMargin="152.8000" BottomMargin="307.2000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="FileNode_1" ActionTag="-1468760827" Tag="101" IconVisible="True" LeftMargin="352.0000" RightMargin="308.0000" TopMargin="160.5305" BottomMargin="299.4695" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="300.0000" Y="500.0000" />
             <AnchorPoint />
-            <Position X="336.0000" Y="307.2000" />
+            <Position X="352.0000" Y="299.4695" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.3500" Y="0.3200" />
+            <PrePosition X="0.3667" Y="0.3119" />
             <PreSize X="0.3125" Y="0.5208" />
             <FileData Type="Normal" Path="WaveLayer.csd" Plist="" />
           </AbstractNodeData>

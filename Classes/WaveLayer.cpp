@@ -62,7 +62,7 @@ void WaveLayer::saveChildToLocalVariable(){
     
     btnSprite = (Button*)panel->getChildByTag(0);
     
-    btnShow = (Button*)panel->getChildByTag(50);
+    //btnShow = (Button*)panel->getChildByTag(50);
     
     for(int i = 1; i < 8;i++){
         auto _text = (Text*)panel->getChildByTag(i);
@@ -80,7 +80,7 @@ void WaveLayer::saveChildToLocalVariable(){
 }
 
 void WaveLayer::modifyButtonEvent(){
-    btnShow->addTouchEventListener(CC_CALLBACK_2(WaveLayer::callBackButton, this));
+    //btnShow->addTouchEventListener(CC_CALLBACK_2(WaveLayer::callBackButton, this));
 }
 
 void WaveLayer::modifyTouchEvent(){
