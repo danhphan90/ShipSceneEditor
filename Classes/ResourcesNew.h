@@ -17,8 +17,25 @@ return CCString::createWithFormat  ("fonts/%s.ttf",_FontName_);\
 #include <iostream>
 #include "cocos2d.h"
 
+#define DEBUG_LOG
+
 USING_NS_CC;
 
+enum PropertiesTag{
+    tagHP = 0,
+    tagCount = 1,
+    tagAttackSpeed = 2,
+    tagAfterTime = 3,
+    tagPriority = 4,
+    tagMoveSpeed = 5,
+    tagPeriod = 6
+};
+
+enum SpriteType{
+    NON_ANIMATED = 0,
+    ANIMATED = 1,
+    SPECIAL = 2
+};
 
 
 static const char* srcPLIST_BotRightBullet                       = "Bullet/BotRightBullet.plist";

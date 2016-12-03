@@ -35,6 +35,8 @@ void WaveLayer::clear(){
 
     }
     _event->release();
+    spriteSelectionLayer->clear();
+    spriteSelectionLayer->release();
     this->removeAllChildren();
 }
 
@@ -43,6 +45,9 @@ bool WaveLayer::init(){
     if (!Layer::init()){
         return false;
     }
+    
+    spriteSelectionLayer = EnemySpriteSelectionLayer::create();
+    spriteSelectionLayer->retain();
     
     this->setContentSize(Size(300,500));
     
@@ -53,16 +58,17 @@ bool WaveLayer::init(){
     saveChildToLocalVariable();
     modifyButtonEvent();
     modifyTouchEvent();
+    modifyOtherEvent();
     return true;
 }
 
 
 void WaveLayer::saveChildToLocalVariable(){
     panel = (Layout*)rootNode->getChildByTag(16);
-    
     btnSprite = (Button*)panel->getChildByTag(0);
     
-    //btnShow = (Button*)panel->getChildByTag(50);
+    txtSpriteType = (Text*)panel->getChildByTag(69);
+    txtSpriteName = (Text*)panel->getChildByTag(497);
     
     for(int i = 1; i < 8;i++){
         auto _text = (Text*)panel->getChildByTag(i);
@@ -80,7 +86,7 @@ void WaveLayer::saveChildToLocalVariable(){
 }
 
 void WaveLayer::modifyButtonEvent(){
-    //btnShow->addTouchEventListener(CC_CALLBACK_2(WaveLayer::callBackButton, this));
+    btnSprite->addTouchEventListener(CC_CALLBACK_2(WaveLayer::callBackButton, this));
 }
 
 void WaveLayer::modifyTouchEvent(){
@@ -90,6 +96,10 @@ void WaveLayer::modifyTouchEvent(){
     _event->onTouchEnded = CC_CALLBACK_2(WaveLayer::onTouchEnded, this);
     _event->setSwallowTouches(true);
     _event->retain();
+}
+
+void WaveLayer::modifyOtherEvent(){
+    spriteSelectionLayer->onSpriteChange = CC_CALLBACK_2(WaveLayer::callBackSpriteSelection, this);
 }
 
 int WaveLayer::getValue(PropertiesTag type){
@@ -118,6 +128,48 @@ void WaveLayer::callBackClose(){
     getEventDispatcher()->removeEventListener(_event);
     this->setScale(1);
 }
+
+void WaveLayer::callBackBtnSprite(){
+    spriteSelectionLayer->open();
+    this->addChild(spriteSelectionLayer,1);
+    spriteSelectionLayer->setPosition(-300, 0);
+}
+
+void WaveLayer::callBackSpriteSelection(std::string _spriteName, SpriteType type){
+    
+#if DEBUG_LOG 0
+    log("callBackSpriteSelection: Can't find sprite name or sprite name == null");
+#endif
+    
+    if (_spriteName == "") return;
+    
+    auto _path = StringUtils::format("%s.png",_spriteName.c_str());
+    
+    btnSprite->loadTextures(_path,_path,_path,Widget::TextureResType::PLIST);
+    
+    txtSpriteName->setString(_spriteName);
+    
+    switch (type) {
+        case ANIMATED:
+            txtSpriteType->setString("Animated");
+            break;
+        
+        case NON_ANIMATED:
+            txtSpriteType->setString("Non-Animated");
+            break;
+            
+        case SPECIAL:
+            txtSpriteType->setString("Special");
+            break;
+
+            
+        default:
+            break;
+    }
+}
+
+
+
 void WaveLayer::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType type){
     auto _button = (Button*)pSender;
     
@@ -126,15 +178,9 @@ void WaveLayer::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType typ
     switch (type) {
         case cocos2d::ui::Widget::TouchEventType::ENDED:
             switch (_button->getTag()) {
-                case 50:
+                case 0:
                 {
-                    log("Hp: %zd",getValue(tagHP));
-                    log("Count: %zd",getValue(tagCount));
-                    log("Attack Speed: %zd",getValue(tagAttackSpeed));
-                    log("After Time: %zd",getValue(tagAfterTime));
-                    log("Priority: %zd",getValue(tagPriority));
-                    log("Move Speed: %zd",getValue(tagMoveSpeed));
-                    log("Period: %zd",getValue(tagPeriod));
+                    this->callBackBtnSprite();
                     break;
                 }
                     

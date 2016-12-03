@@ -1,60 +1,54 @@
 //
-//  WaveLayer.hpp
+//  EnemySpriteSelectionLayer.hpp
 //  ShipSceneEditor
 //
-//  Created by Dao Hoang Tung on 12/1/16.
+//  Created by KuKulKan on 12/3/16.
 //
 //
 
-#ifndef WaveLayer_hpp
-#define WaveLayer_hpp
+#ifndef EnemySpriteSelectionLayer_hpp
+#define EnemySpriteSelectionLayer_hpp
+
 
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
-#include "EnemySpriteSelectionLayer.hpp"
 #include "ResourcesNew.h"
 
 using namespace std;
 using namespace cocos2d;
 using namespace cocos2d::ui;
 
-
-
-class WaveLayer : public Layer{
+class EnemySpriteSelectionLayer : public Layer{
+    
 public:
+    EnemySpriteSelectionLayer();
+    CREATE_FUNC(EnemySpriteSelectionLayer);
+    
     void open();
     void close();
     void clear();
+    
+    typedef std::function<void(string,SpriteType)> ccSpriteChangeCallback;
+    
+    ccSpriteChangeCallback onSpriteChange;
 
-    CREATE_FUNC(WaveLayer);
-    
 private:
-    EnemySpriteSelectionLayer* spriteSelectionLayer;
-    
     Node* rootNode;
     
-    Button* btnSprite;
-    Button* btnShow;
-    
-    Layout* panel;
-    
-    Vector<TextField*> vecField;
-    
+    ListView* listViewMain;
+        
     EventListenerTouchOneByOne* _event;
     
-    Text* txtSpriteType;
-    Text* txtSpriteName;
+    Vector<Button*> vecBtnSpriteImage;
     
-
+    
     virtual bool init();
     void saveChildToLocalVariable();
     void modifyButtonEvent();
     void modifyTouchEvent();
-    void modifyOtherEvent();
+    void modifyListView();
     
-    
-    int getValue(PropertiesTag type);
-    
+        
     void callBackButton(Ref* pSender, Widget::TouchEventType type);
     
     
@@ -63,9 +57,7 @@ private:
    	void onTouchEnded(Touch* touch, Event* event);
     
     void callBackClose();
-    void callBackBtnSprite();
-    void callBackSpriteSelection(std::string _spriteName, SpriteType type);
+
     
 };
-
-#endif /* WaveLayer_hpp */
+#endif /* EnemySpriteSelectionLayer_hpp */

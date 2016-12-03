@@ -23,6 +23,8 @@ void Unit::loadResource(){
         
         SpriteFrameCache::getInstance()->addSpriteFramesWithFile("Enemy/EnemySprite.plist");
         SpriteFrameCache::getInstance()->addSpriteFramesWithFile("Enemy/BossSprite.plist");
+        SpriteFrameCache::getInstance()->addSpriteFramesWithFile("Enemy/EnemySpriteEditor.plist");
+
         
         spriteCache = SpriteFrameCache::getInstance();
         unitToFrameCache = true;

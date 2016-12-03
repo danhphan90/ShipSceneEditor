@@ -116,16 +116,6 @@
             <PreSize X="0.3333" Y="1.0000" />
             <FileData Type="Normal" Path="NewMissionSceneResource/backtotoppressed.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="FileNode_1" ActionTag="-1468760827" Tag="101" IconVisible="True" LeftMargin="352.0000" RightMargin="308.0000" TopMargin="160.5305" BottomMargin="299.4695" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="300.0000" Y="500.0000" />
-            <AnchorPoint />
-            <Position X="352.0000" Y="299.4695" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.3667" Y="0.3119" />
-            <PreSize X="0.3125" Y="0.5208" />
-            <FileData Type="Normal" Path="WaveLayer.csd" Plist="" />
-          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>
