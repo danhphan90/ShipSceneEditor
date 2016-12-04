@@ -48,9 +48,12 @@
 		521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6219F0C34300D177D7 /* Default-667h@2x.png */; };
 		521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6319F0C34300D177D7 /* Default-736h@3x.png */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		661BEB3A1DF2FBC700D956E0 /* CoinLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 661BEB381DF2FBC700D956E0 /* CoinLayer.cpp */; };
 		661D6C481DF0502500F8522A /* LayerTouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 661D6C461DF0502500F8522A /* LayerTouchController.cpp */; };
 		66C3AF471DF2690700B63EDE /* EnemySpriteSelectionLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66C3AF451DF2690700B63EDE /* EnemySpriteSelectionLayer.cpp */; };
 		66C3AF491DF26A2B00B63EDE /* SpriteLayer.csb in Resources */ = {isa = PBXBuildFile; fileRef = 66C3AF481DF26A2B00B63EDE /* SpriteLayer.csb */; };
+		66C3AF4B1DF27F7000B63EDE /* Item in Resources */ = {isa = PBXBuildFile; fileRef = 66C3AF4A1DF27F7000B63EDE /* Item */; };
+		66C3AF4D1DF2812C00B63EDE /* ItemLayer.csb in Resources */ = {isa = PBXBuildFile; fileRef = 66C3AF4C1DF2812C00B63EDE /* ItemLayer.csb */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		893765351DEE648100704A87 /* NewMenu in Resources */ = {isa = PBXBuildFile; fileRef = 893765331DEE648100704A87 /* NewMenu */; };
 		893765361DEE648100704A87 /* NewCustomFont in Resources */ = {isa = PBXBuildFile; fileRef = 893765341DEE648100704A87 /* NewCustomFont */; };
@@ -134,11 +137,15 @@
 		521A8E6219F0C34300D177D7 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		661BEB381DF2FBC700D956E0 /* CoinLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinLayer.cpp; sourceTree = "<group>"; };
+		661BEB391DF2FBC700D956E0 /* CoinLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CoinLayer.hpp; sourceTree = "<group>"; };
 		661D6C461DF0502500F8522A /* LayerTouchController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayerTouchController.cpp; sourceTree = "<group>"; };
 		661D6C471DF0502500F8522A /* LayerTouchController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LayerTouchController.hpp; sourceTree = "<group>"; };
 		66C3AF451DF2690700B63EDE /* EnemySpriteSelectionLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemySpriteSelectionLayer.cpp; sourceTree = "<group>"; };
 		66C3AF461DF2690700B63EDE /* EnemySpriteSelectionLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnemySpriteSelectionLayer.hpp; sourceTree = "<group>"; };
 		66C3AF481DF26A2B00B63EDE /* SpriteLayer.csb */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpriteLayer.csb; sourceTree = "<group>"; };
+		66C3AF4A1DF27F7000B63EDE /* Item */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Item; sourceTree = "<group>"; };
+		66C3AF4C1DF2812C00B63EDE /* ItemLayer.csb */ = {isa = PBXFileReference; lastKnownFileType = file; path = ItemLayer.csb; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		893765331DEE648100704A87 /* NewMenu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewMenu; sourceTree = "<group>"; };
 		893765341DEE648100704A87 /* NewCustomFont */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewCustomFont; sourceTree = "<group>"; };
@@ -300,9 +307,11 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				66C3AF4C1DF2812C00B63EDE /* ItemLayer.csb */,
 				66C3AF481DF26A2B00B63EDE /* SpriteLayer.csb */,
 				89953B371DEFE3F000A1C588 /* WaveLayer.csb */,
 				89D68E8F1DEC09FA002C7ED8 /* MainScene.csb */,
+				66C3AF4A1DF27F7000B63EDE /* Item */,
 				893765331DEE648100704A87 /* NewMenu */,
 				893765341DEE648100704A87 /* NewCustomFont */,
 				89D68E911DEC0A02002C7ED8 /* NewMissionSceneResource */,
@@ -329,6 +338,8 @@
 				89953B3D1DF02C0E00A1C588 /* WaveButton.hpp */,
 				66C3AF451DF2690700B63EDE /* EnemySpriteSelectionLayer.cpp */,
 				66C3AF461DF2690700B63EDE /* EnemySpriteSelectionLayer.hpp */,
+				661BEB381DF2FBC700D956E0 /* CoinLayer.cpp */,
+				661BEB391DF2FBC700D956E0 /* CoinLayer.hpp */,
 				89D68E7E1DEBE41E002C7ED8 /* Enemy */,
 				89D68E7D1DEBE39B002C7ED8 /* API */,
 				89D68E6F1DEBE2FD002C7ED8 /* CustomSprite */,
@@ -577,9 +588,11 @@
 				89D68E901DEC09FA002C7ED8 /* MainScene.csb in Resources */,
 				89953B381DEFE3F000A1C588 /* WaveLayer.csb in Resources */,
 				89D68E921DEC0A02002C7ED8 /* NewMissionSceneResource in Resources */,
+				66C3AF4B1DF27F7000B63EDE /* Item in Resources */,
 				893765361DEE648100704A87 /* NewCustomFont in Resources */,
 				89D68E6B1DEBE0B5002C7ED8 /* Enemy in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
+				66C3AF4D1DF2812C00B63EDE /* ItemLayer.csb in Resources */,
 				89D68E8E1DEBE91A002C7ED8 /* CustomSprite in Resources */,
 				66C3AF491DF26A2B00B63EDE /* SpriteLayer.csb in Resources */,
 				89D68E6C1DEBE0B5002C7ED8 /* Bullet in Resources */,
@@ -623,6 +636,7 @@
 				89D68E601DEBE009002C7ED8 /* Wave.cpp in Sources */,
 				89D68E5C1DEBDFD7002C7ED8 /* MissionMap.cpp in Sources */,
 				89D68E5B1DEBDFD7002C7ED8 /* Path.cpp in Sources */,
+				661BEB3A1DF2FBC700D956E0 /* CoinLayer.cpp in Sources */,
 				89953B361DEFE2FC00A1C588 /* WaveLayer.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				89953B3E1DF02C0E00A1C588 /* WaveButton.cpp in Sources */,

@@ -15,6 +15,7 @@ Scene* HelloWorld::createScene()
     Bullet::loadBullet();
     Path::loadResource();
     LightningSprite::loadResource();
+    CoinLayer::loadResource();
     
     // 'layer' is an autorelease object
     auto layer = HelloWorld::create();

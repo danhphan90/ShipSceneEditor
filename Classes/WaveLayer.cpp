@@ -6,7 +6,6 @@
 //
 //
 
-
 #include "WaveLayer.hpp"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
@@ -15,6 +14,10 @@ USING_NS_CC;
 
 using namespace cocostudio::timeline;
 
+WaveLayer::WaveLayer(){
+
+}
+
 void WaveLayer::open(){
     this->setVisible(true);
     getEventDispatcher()->addEventListenerWithSceneGraphPriority(_event, this);
@@ -22,12 +25,10 @@ void WaveLayer::open(){
 
 void WaveLayer::close(){
     auto _callBackClose = CallFuncN::create(CC_CALLBACK_0(WaveLayer::callBackClose, this));
-    
     this->runAction(Sequence::create(EaseElasticOut::create(ScaleTo::create(0.5, 0.),0.5),
                                          _callBackClose, NULL));
     
 }
-
 
 void WaveLayer::clear(){
     if (vecField.size() > 0){
@@ -49,6 +50,9 @@ bool WaveLayer::init(){
     spriteSelectionLayer = EnemySpriteSelectionLayer::create();
     spriteSelectionLayer->retain();
     
+    coinSelectionLayer = CoinLayer::create();
+    coinSelectionLayer->retain();
+    
     this->setContentSize(Size(300,500));
     
     rootNode = CSLoader::createNode("WaveLayer.csb");
@@ -56,12 +60,12 @@ bool WaveLayer::init(){
     this->addChild(rootNode);
     
     saveChildToLocalVariable();
+    modifyLocalVariable();
     modifyButtonEvent();
     modifyTouchEvent();
     modifyOtherEvent();
     return true;
 }
-
 
 void WaveLayer::saveChildToLocalVariable(){
     panel = (Layout*)rootNode->getChildByTag(16);
@@ -70,7 +74,7 @@ void WaveLayer::saveChildToLocalVariable(){
     txtSpriteType = (Text*)panel->getChildByTag(69);
     txtSpriteName = (Text*)panel->getChildByTag(497);
     
-    for(int i = 1; i < 8;i++){
+    for(int i = 1; i < 9;i++){
         auto _text = (Text*)panel->getChildByTag(i);
         if (_text != NULL){
             auto _img = (ImageView*)_text->getChildByTag(i);
@@ -83,10 +87,22 @@ void WaveLayer::saveChildToLocalVariable(){
             }
         }
     }
+    
+    itemItemCount = (Text*)panel->getChildByTag(8);
+    itemItemType = (Text*)panel->getChildByTag(9);
+    
+    btnItem = (Button*)itemItemType->getChildByTag(9);
+}
+
+
+void WaveLayer::modifyLocalVariable(){
+    itemItemCount->setVisible(false);
+    itemItemType->setVisible(false);
 }
 
 void WaveLayer::modifyButtonEvent(){
     btnSprite->addTouchEventListener(CC_CALLBACK_2(WaveLayer::callBackButton, this));
+    btnItem->addTouchEventListener(CC_CALLBACK_2(WaveLayer::callBackButton, this));
 }
 
 void WaveLayer::modifyTouchEvent(){
@@ -100,6 +116,7 @@ void WaveLayer::modifyTouchEvent(){
 
 void WaveLayer::modifyOtherEvent(){
     spriteSelectionLayer->onSpriteChange = CC_CALLBACK_2(WaveLayer::callBackSpriteSelection, this);
+    coinSelectionLayer->onItemChange = CC_CALLBACK_2(WaveLayer::callBackItemSelection, this);
 }
 
 int WaveLayer::getValue(PropertiesTag type){
@@ -135,12 +152,13 @@ void WaveLayer::callBackBtnSprite(){
     spriteSelectionLayer->setPosition(-300, 0);
 }
 
+void WaveLayer::callBackBtnItem(){
+    coinSelectionLayer->open();
+    this->addChild(coinSelectionLayer,1);
+    coinSelectionLayer->setPosition(-20, -120);
+}
+
 void WaveLayer::callBackSpriteSelection(std::string _spriteName, SpriteType type){
-    
-#if DEBUG_LOG 0
-    log("callBackSpriteSelection: Can't find sprite name or sprite name == null");
-#endif
-    
     if (_spriteName == "") return;
     
     auto _path = StringUtils::format("%s.png",_spriteName.c_str());
@@ -152,22 +170,39 @@ void WaveLayer::callBackSpriteSelection(std::string _spriteName, SpriteType type
     switch (type) {
         case ANIMATED:
             txtSpriteType->setString("Animated");
+            itemItemCount->setVisible(false);
+            itemItemType->setVisible(false);
             break;
         
         case NON_ANIMATED:
             txtSpriteType->setString("Non-Animated");
+            itemItemCount->setVisible(false);
+            itemItemType->setVisible(false);
             break;
             
         case SPECIAL:
             txtSpriteType->setString("Special");
+            itemItemCount->setVisible(true);
+            itemItemType->setVisible(true);
             break;
 
             
         default:
             break;
     }
+    
+    setSpriteName(_spriteName);
+    setSpriteType(type);
 }
 
+void WaveLayer::callBackItemSelection(std::string _itemName, TypeCoin type){
+    if (_itemName == "") return;
+    
+    auto _path = _itemName + ".png";
+    btnItem->loadTextures(_path, _path,_path,Widget::TextureResType::PLIST);
+    
+    setItemType(type);
+}
 
 
 void WaveLayer::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType type){
@@ -181,6 +216,12 @@ void WaveLayer::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType typ
                 case 0:
                 {
                     this->callBackBtnSprite();
+                    break;
+                }
+                    
+                case 9:
+                {
+                    this->callBackBtnItem();
                     break;
                 }
                     

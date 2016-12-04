@@ -9,13 +9,13 @@
           <AbstractNodeData Name="Panel_1" ActionTag="877897862" Tag="16" IconVisible="False" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Enable="True" LeftEage="91" RightEage="91" TopEage="27" BottomEage="27" Scale9OriginX="91" Scale9OriginY="27" Scale9Width="96" Scale9Height="28" ctype="PanelObjectData">
             <Size X="300.0000" Y="500.0000" />
             <Children>
-              <AbstractNodeData Name="Button_1" ActionTag="1231202364" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="61.5100" RightMargin="195.4900" TopMargin="38.0140" BottomMargin="393.9860" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="13" Scale9Height="46" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="Button_1" ActionTag="1231202364" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="41.5000" RightMargin="215.5000" TopMargin="46.0168" BottomMargin="385.9832" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="13" Scale9Height="46" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="43.0000" Y="68.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="83.0100" Y="427.9860" />
+                <Position X="63.0000" Y="419.9832" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2767" Y="0.8560" />
+                <PrePosition X="0.2100" Y="0.8400" />
                 <PreSize X="0.1433" Y="0.1360" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="PlistSubImage" Path="BioSnailB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -315,18 +315,18 @@
               <AbstractNodeData Name="Text_1_0_0_0_0_0_0_0_0" ActionTag="-780159502" Tag="9" IconVisible="False" LeftMargin="55.0000" RightMargin="140.0000" TopMargin="451.2262" BottomMargin="22.7738" FontSize="22" LabelText="Item Type:" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="105.0000" Y="26.0000" />
                 <Children>
-                  <AbstractNodeData Name="Button_2" ActionTag="-1561766893" Tag="9" IconVisible="False" LeftMargin="115.0000" RightMargin="-40.0000" TopMargin="-1.0000" BottomMargin="-3.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="30.0000" Y="30.0000" />
+                  <AbstractNodeData Name="Button_2" ActionTag="-1561766893" Tag="9" IconVisible="False" LeftMargin="124.0000" RightMargin="-31.0000" TopMargin="8.0000" BottomMargin="6.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="3" RightEage="3" TopEage="3" BottomEage="3" Scale9OriginX="3" Scale9OriginY="3" Scale9Width="6" Scale9Height="6" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="12.0000" Y="12.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="130.0000" Y="12.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="1.2381" Y="0.4615" />
-                    <PreSize X="0.2857" Y="1.1538" />
+                    <PreSize X="0.1143" Y="0.4615" />
                     <TextColor A="255" R="255" G="255" B="255" />
-                    <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                    <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-                    <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+                    <DisabledFileData Type="PlistSubImage" Path="SilverCoin.png" Plist="Item/SingleItem.plist" />
+                    <PressedFileData Type="PlistSubImage" Path="SilverCoin.png" Plist="Item/SingleItem.plist" />
+                    <NormalFileData Type="PlistSubImage" Path="SilverCoin.png" Plist="Item/SingleItem.plist" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -341,25 +341,25 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_4" ActionTag="-1284858782" Tag="69" IconVisible="False" LeftMargin="130.0000" RightMargin="37.0000" TopMargin="43.1078" BottomMargin="433.8922" FontSize="20" LabelText="Non-Animated" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="Text_4" ActionTag="-1284858782" Tag="69" IconVisible="False" LeftMargin="109.9985" RightMargin="57.0015" TopMargin="51.1104" BottomMargin="425.8896" FontSize="20" LabelText="Non-Animated" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="133.0000" Y="23.0000" />
                 <AnchorPoint ScaleY="0.5000" />
-                <Position X="130.0000" Y="445.3922" />
+                <Position X="109.9985" Y="437.3896" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="128" G="0" B="128" />
-                <PrePosition X="0.4333" Y="0.8908" />
+                <PrePosition X="0.3667" Y="0.8748" />
                 <PreSize X="0.4433" Y="0.0460" />
                 <FontResource Type="Normal" Path="NewCustomFont/fonts/Roboto-Bold.ttf" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_4_0" ActionTag="1812256136" Tag="497" IconVisible="False" LeftMargin="130.0000" RightMargin="59.0000" TopMargin="73.1186" BottomMargin="397.8814" FontSize="25" LabelText="BioSnailB" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="Text_4_0" ActionTag="1812256136" Tag="497" IconVisible="False" LeftMargin="109.9985" RightMargin="79.0015" TopMargin="81.1201" BottomMargin="389.8799" FontSize="25" LabelText="BioSnailB" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="111.0000" Y="29.0000" />
                 <AnchorPoint ScaleY="0.5000" />
-                <Position X="130.0000" Y="412.3814" />
+                <Position X="109.9985" Y="404.3799" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="0" B="0" />
-                <PrePosition X="0.4333" Y="0.8248" />
+                <PrePosition X="0.3667" Y="0.8088" />
                 <PreSize X="0.3700" Y="0.0580" />
                 <FontResource Type="Normal" Path="NewCustomFont/fonts/Roboto-Bold.ttf" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />

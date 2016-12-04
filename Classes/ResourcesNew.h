@@ -17,7 +17,7 @@ return CCString::createWithFormat  ("fonts/%s.ttf",_FontName_);\
 #include <iostream>
 #include "cocos2d.h"
 
-#define DEBUG_LOG
+#define DEBUG_LOGØ
 
 USING_NS_CC;
 
@@ -28,7 +28,9 @@ enum PropertiesTag{
     tagAfterTime = 3,
     tagPriority = 4,
     tagMoveSpeed = 5,
-    tagPeriod = 6
+    tagPeriod = 6,
+    tagItemCount = 7,
+    tagItemType = 8
 };
 
 enum SpriteType{

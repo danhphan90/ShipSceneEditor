@@ -3,43 +3,6 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Folder Name="NewCustomFont">
-          <Folder Name="fonts">
-            <Fnt Name="Roboto_Red.fnt" />
-            <Fnt Name="Roboto_wheel.fnt" />
-            <Fnt Name="Roboto_Yellow.fnt" />
-            <TTF Name="Roboto-Bold.ttf" />
-            <Fnt Name="UTM_Erie_Black_text.fnt" />
-          </Folder>
-          <Fnt Name="myFontHelloWorld.fnt" />
-          <Fnt Name="SpecialFontKuKulKan.fnt" />
-          <Fnt Name="YellowFontGreen.fnt" />
-        </Folder>
-        <Folder Name="NewMenu">
-          <Image Name="BlankMenuButton_ove.png" />
-          <Image Name="BlankMenuButton_up.png" />
-          <Image Name="InterLogoBitmapData.png" />
-          <Image Name="logo.png" />
-          <Image Name="LogoBitmapData.png" />
-          <Image Name="SubLogoBitmapData.png" />
-          <Image Name="TitlesBackdrop.jpg" />
-        </Folder>
-        <Folder Name="NewMissionSceneResource">
-          <Image Name="BackdropNebula.png" />
-          <Image Name="backtotopnormal.png" />
-          <Image Name="backtotoppressed.png" />
-          <Image Name="HudBarBorderEnemyHealth.png" />
-          <Image Name="HudBarBorderHealth.png" />
-          <Image Name="HudBarBorderShield.png" />
-          <Image Name="sliderProgress2.png" />
-        </Folder>
-        <Folder Name="NewParticle">
-          <PlistParticleFile Name="mainMenuScene_particle.plist" />
-        </Folder>
-        <Image Name="HelloWorld.png" />
-        <Project Name="MainScene.csd" Type="Scene" />
-        <Project Name="SpriteLayer.csd" Type="Layer" />
-        <Project Name="WaveLayer.csd" Type="Layer" />
         <Folder Name="Enemy">
           <PlistImageFolder Image="BossSprite.png" PListFile="BossSprite.plist" Name=".BossSprite_PList.Dir">
             <PlistImageFile Name="Boss1.png" Key="Boss1.png" />
@@ -1014,6 +977,52 @@
           <Image Name="BossSprite.png" />
           <Image Name="EnemySprite.png" />
         </Folder>
+        <Folder Name="Item">
+          <PlistImageFolder Image="SingleItem.png" PListFile="SingleItem.plist" Name=".SingleItem_PList.Dir">
+            <PlistImageFile Name="Diamond.png" Key="Diamond.png" />
+            <PlistImageFile Name="GoldBar.png" Key="GoldBar.png" />
+            <PlistImageFile Name="GoldCoin.png" Key="GoldCoin.png" />
+            <PlistImageFile Name="SilverCoin.png" Key="SilverCoin.png" />
+          </PlistImageFolder>
+        </Folder>
+        <Folder Name="NewCustomFont">
+          <Folder Name="fonts">
+            <Fnt Name="Roboto_Red.fnt" />
+            <Fnt Name="Roboto_wheel.fnt" />
+            <Fnt Name="Roboto_Yellow.fnt" />
+            <TTF Name="Roboto-Bold.ttf" />
+            <Fnt Name="UTM_Erie_Black_text.fnt" />
+          </Folder>
+          <Fnt Name="myFontHelloWorld.fnt" />
+          <Fnt Name="SpecialFontKuKulKan.fnt" />
+          <Fnt Name="YellowFontGreen.fnt" />
+        </Folder>
+        <Folder Name="NewMenu">
+          <Image Name="BlankMenuButton_ove.png" />
+          <Image Name="BlankMenuButton_up.png" />
+          <Image Name="InterLogoBitmapData.png" />
+          <Image Name="logo.png" />
+          <Image Name="LogoBitmapData.png" />
+          <Image Name="SubLogoBitmapData.png" />
+          <Image Name="TitlesBackdrop.jpg" />
+        </Folder>
+        <Folder Name="NewMissionSceneResource">
+          <Image Name="BackdropNebula.png" />
+          <Image Name="backtotopnormal.png" />
+          <Image Name="backtotoppressed.png" />
+          <Image Name="HudBarBorderEnemyHealth.png" />
+          <Image Name="HudBarBorderHealth.png" />
+          <Image Name="HudBarBorderShield.png" />
+          <Image Name="sliderProgress2.png" />
+        </Folder>
+        <Folder Name="NewParticle">
+          <PlistParticleFile Name="mainMenuScene_particle.plist" />
+        </Folder>
+        <Image Name="HelloWorld.png" />
+        <Project Name="ItemLayer.csd" Type="Layer" />
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="SpriteLayer.csd" Type="Layer" />
+        <Project Name="WaveLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
