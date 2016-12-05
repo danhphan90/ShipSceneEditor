@@ -1023,6 +1023,9 @@
         <Project Name="MainScene.csd" Type="Scene" />
         <Project Name="SpriteLayer.csd" Type="Layer" />
         <Project Name="WaveLayer.csd" Type="Layer" />
+        <Folder Name="PathLayer">
+          <Project Name="PathReturn.csd" Type="Layer" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

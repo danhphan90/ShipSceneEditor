@@ -4,19 +4,19 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
-        <Size X="960.0000" Y="960.0000" />
+        <Size X="1440.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="Image_1" ActionTag="-1851289956" Tag="8" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="1.0000" RightMargin="319.0000" Scale9Enable="True" LeftEage="165" RightEage="165" TopEage="198" BottomEage="198" Scale9OriginX="165" Scale9OriginY="198" Scale9Width="170" Scale9Height="204" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_1" ActionTag="-1851289956" Tag="8" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="1.0000" RightMargin="799.0000" Scale9Enable="True" LeftEage="165" RightEage="165" TopEage="198" BottomEage="198" Scale9OriginX="165" Scale9OriginY="198" Scale9Width="170" Scale9Height="204" ctype="ImageViewObjectData">
             <Size X="640.0000" Y="960.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="321.0000" Y="480.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.3344" Y="0.5000" />
-            <PreSize X="0.6667" Y="1.0000" />
+            <PrePosition X="0.2229" Y="0.5000" />
+            <PreSize X="0.4444" Y="1.0000" />
             <FileData Type="Normal" Path="NewMissionSceneResource/BackdropNebula.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Panel" ActionTag="-504137085" Tag="9" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="640.0000" Scale9Enable="True" LeftEage="91" RightEage="91" TopEage="27" BottomEage="27" Scale9OriginX="91" Scale9OriginY="27" Scale9Width="96" Scale9Height="28" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Panel" ActionTag="-504137085" Tag="9" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="640.0000" RightMargin="480.0000" Scale9Enable="True" LeftEage="91" RightEage="91" TopEage="27" BottomEage="27" Scale9OriginX="91" Scale9OriginY="27" Scale9Width="96" Scale9Height="28" ctype="ImageViewObjectData">
             <Size X="320.0000" Y="960.0000" />
             <Children>
               <AbstractNodeData Name="BitmapFontLabel_2" ActionTag="417170150" Tag="13" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="74.6000" RightMargin="151.4000" TopMargin="100.4978" BottomMargin="809.5022" LabelText="Wave" ctype="TextBMFontObjectData">
@@ -112,8 +112,8 @@
             <Position X="800.0000" Y="480.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.8333" Y="0.5000" />
-            <PreSize X="0.3333" Y="1.0000" />
+            <PrePosition X="0.5556" Y="0.5000" />
+            <PreSize X="0.2222" Y="1.0000" />
             <FileData Type="Normal" Path="NewMissionSceneResource/backtotoppressed.png" Plist="" />
           </AbstractNodeData>
         </Children>

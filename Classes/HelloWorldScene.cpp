@@ -45,7 +45,6 @@ bool HelloWorld::init()
     }
     
     this->scheduleUpdate();
-
     
     rootNode = CSLoader::createNode("MainScene.csb");
     
