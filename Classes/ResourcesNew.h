@@ -17,7 +17,13 @@ return CCString::createWithFormat  ("fonts/%s.ttf",_FontName_);\
 #include <iostream>
 #include "cocos2d.h"
 
-#define DEBUG_LOGØ
+#define MACBOOK_PRO
+
+#ifdef MACBOOK_PRO
+#define _SCALE 0.75
+#else
+#define _SCALE 1.
+#endif
 
 USING_NS_CC;
 

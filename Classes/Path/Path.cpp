@@ -1,4 +1,5 @@
 #include "Path.h"
+#include "ResourcesNew.h"
 
 static float sizeH;
 static float sizeW;
@@ -6,8 +7,9 @@ static float sizeW;
 
 void Path::loadResource()
 {
-    sizeW = 640;
-    sizeH = 960;
+    sizeW = 640*_SCALE;
+    sizeH = 960*_SCALE;
+
 }
 
 KKPoint::KKPoint(Vec2 _point){
@@ -33,13 +35,13 @@ PathReturn* PathReturn::createAt_Y(float _y, float _toY, float _openWidth, float
     
     switch (_direction) {
         case PathDirection::LeftToRight:
-            startPoint = Vec2(-100,y);
-            endPoint = Vec2(-100,y + _gapHeight);
+            startPoint = Vec2(-100*_SCALE,y);
+            endPoint = Vec2(-100*_SCALE,y + _gapHeight);
             break;
             
         case PathDirection::RightToLeft:
-            startPoint = Vec2(sizeW+100,y);
-            endPoint = Vec2(sizeW+100,y+_gapHeight);
+            startPoint = Vec2(sizeW+100*_SCALE,y);
+            endPoint = Vec2(sizeW+100*_SCALE,y+_gapHeight);
             break;
             
         default:
@@ -86,13 +88,13 @@ PathReturn* PathReturn::createAt_X(float _x, float _toX, float _openHeight, floa
     
     switch (_direction) {
         case PathDirection::BotToTop:
-            startPoint = Vec2(x,-100);
-            endPoint = Vec2(toX,-100);
+            startPoint = Vec2(x,-100*_SCALE);
+            endPoint = Vec2(toX,-100*_SCALE);
             break;
             
         case PathDirection::TopToBot:
-            startPoint = Vec2(x,sizeH+100);
-            endPoint = Vec2(toX,sizeH + 100);
+            startPoint = Vec2(x,sizeH+100*_SCALE);
+            endPoint = Vec2(toX,sizeH + 100*_SCALE);
             break;
             
         default:
@@ -105,8 +107,8 @@ PathReturn* PathReturn::createAt_X(float _x, float _toX, float _openHeight, floa
     path->arrVector.pushBack(new KKPoint( startPoint));
     path->arrVector.pushBack(new KKPoint( nextStartPoint));
     
-    float factorHeight = 180./80;
-    float factorDistance = _gapWidth/80;
+    float factorHeight = 180./(80*_SCALE);
+    float factorDistance = _gapWidth/(80*_SCALE);
     
     for(int i = 0; i<=80;i++){
         float xx = i*factorDistance;
@@ -137,13 +139,13 @@ PathAcross* PathAcross::createAt_Y(float _fromY, float _toY, PathDirection _dire
     
     switch (_direction) {
         case PathDirection::LeftToRight:
-            startPoint = Vec2(-100,_fromY*sizeH);
-            endPoint = Vec2(sizeW+100,_toY*sizeH);
+            startPoint = Vec2(-100*_SCALE,_fromY*sizeH);
+            endPoint = Vec2(sizeW+100*_SCALE,_toY*sizeH);
             break;
             
         case PathDirection::RightToLeft:
-            endPoint = Vec2(-100,_fromY*sizeH);
-            startPoint = Vec2(sizeW+100,_toY*sizeH);
+            endPoint = Vec2(-100*_SCALE,_fromY*sizeH);
+            startPoint = Vec2(sizeW+100*_SCALE,_toY*sizeH);
             break;
             
         default:

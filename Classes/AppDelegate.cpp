@@ -27,18 +27,26 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
+#ifdef MACBOOK_PRO
+        glview = GLViewImpl::createWithRect("ShipSceneEditor", Rect(0, 0, 1440, 720));
+#else
         glview = GLViewImpl::createWithRect("ShipSceneEditor", Rect(0, 0, 1920, 960));
+#endif
         director->setOpenGLView(glview);
     }
-
+    
+#ifdef MACBOOK_PRO
+    director->getOpenGLView()->setDesignResolutionSize(1440, 720, ResolutionPolicy::EXACT_FIT);
+#else
     director->getOpenGLView()->setDesignResolutionSize(1920, 960, ResolutionPolicy::EXACT_FIT);
+#endif
 
     // turn on display FPS
     director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
-
+    
     FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object

@@ -48,6 +48,10 @@ bool HelloWorld::init()
     
     rootNode = CSLoader::createNode("MainScene.csb");
     
+#ifdef MACBOOK_PRO
+    rootNode->setScale(0.75);
+#endif
+    
     this->addChild(rootNode,ZTag::zRootNode);
     this->saveChildToLocalVariable();
     this->modifyLocalVariable();
@@ -65,7 +69,7 @@ void HelloWorld::startMission(){
     Unit::setMissionLayer((Layer*)mission);
     Wave::setMissionlayer((Layer*)mission);
     LightningSprite::loadMissionLayer((Layer*)mission);
-    this->addChild(mission,ZTag::zMission);
+    rootNode->addChild(mission,0);
     
     mission->start();
 
