@@ -57,6 +57,8 @@
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		893765351DEE648100704A87 /* NewMenu in Resources */ = {isa = PBXBuildFile; fileRef = 893765331DEE648100704A87 /* NewMenu */; };
 		893765361DEE648100704A87 /* NewCustomFont in Resources */ = {isa = PBXBuildFile; fileRef = 893765341DEE648100704A87 /* NewCustomFont */; };
+		898A44151DF6C33E0087F8B7 /* PathLayer in Resources */ = {isa = PBXBuildFile; fileRef = 898A44141DF6C33E0087F8B7 /* PathLayer */; };
+		898A44181DF6CB6F0087F8B7 /* PathLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 898A44161DF6CB6F0087F8B7 /* PathLayer.cpp */; };
 		89953B361DEFE2FC00A1C588 /* WaveLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89953B341DEFE2FC00A1C588 /* WaveLayer.cpp */; };
 		89953B381DEFE3F000A1C588 /* WaveLayer.csb in Resources */ = {isa = PBXBuildFile; fileRef = 89953B371DEFE3F000A1C588 /* WaveLayer.csb */; };
 		89953B3E1DF02C0E00A1C588 /* WaveButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89953B3C1DF02C0E00A1C588 /* WaveButton.cpp */; };
@@ -150,6 +152,9 @@
 		893765331DEE648100704A87 /* NewMenu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewMenu; sourceTree = "<group>"; };
 		893765341DEE648100704A87 /* NewCustomFont */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewCustomFont; sourceTree = "<group>"; };
 		893765371DEEE0F100704A87 /* ResourcesNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourcesNew.h; sourceTree = "<group>"; };
+		898A44141DF6C33E0087F8B7 /* PathLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PathLayer; sourceTree = "<group>"; };
+		898A44161DF6CB6F0087F8B7 /* PathLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathLayer.cpp; sourceTree = "<group>"; };
+		898A44171DF6CB6F0087F8B7 /* PathLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PathLayer.hpp; sourceTree = "<group>"; };
 		89953B341DEFE2FC00A1C588 /* WaveLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveLayer.cpp; sourceTree = "<group>"; };
 		89953B351DEFE2FC00A1C588 /* WaveLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WaveLayer.hpp; sourceTree = "<group>"; };
 		89953B371DEFE3F000A1C588 /* WaveLayer.csb */ = {isa = PBXFileReference; lastKnownFileType = file; path = WaveLayer.csb; sourceTree = "<group>"; };
@@ -307,6 +312,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				898A44141DF6C33E0087F8B7 /* PathLayer */,
 				66C3AF4C1DF2812C00B63EDE /* ItemLayer.csb */,
 				66C3AF481DF26A2B00B63EDE /* SpriteLayer.csb */,
 				89953B371DEFE3F000A1C588 /* WaveLayer.csb */,
@@ -340,6 +346,8 @@
 				66C3AF461DF2690700B63EDE /* EnemySpriteSelectionLayer.hpp */,
 				661BEB381DF2FBC700D956E0 /* CoinLayer.cpp */,
 				661BEB391DF2FBC700D956E0 /* CoinLayer.hpp */,
+				898A44161DF6CB6F0087F8B7 /* PathLayer.cpp */,
+				898A44171DF6CB6F0087F8B7 /* PathLayer.hpp */,
 				89D68E7E1DEBE41E002C7ED8 /* Enemy */,
 				89D68E7D1DEBE39B002C7ED8 /* API */,
 				89D68E6F1DEBE2FD002C7ED8 /* CustomSprite */,
@@ -594,6 +602,7 @@
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				66C3AF4D1DF2812C00B63EDE /* ItemLayer.csb in Resources */,
 				89D68E8E1DEBE91A002C7ED8 /* CustomSprite in Resources */,
+				898A44151DF6C33E0087F8B7 /* PathLayer in Resources */,
 				66C3AF491DF26A2B00B63EDE /* SpriteLayer.csb in Resources */,
 				89D68E6C1DEBE0B5002C7ED8 /* Bullet in Resources */,
 				893765351DEE648100704A87 /* NewMenu in Resources */,
@@ -629,6 +638,7 @@
 				89D68E861DEBE41E002C7ED8 /* Boss1.cpp in Sources */,
 				661D6C481DF0502500F8522A /* LayerTouchController.cpp in Sources */,
 				66C3AF471DF2690700B63EDE /* EnemySpriteSelectionLayer.cpp in Sources */,
+				898A44181DF6CB6F0087F8B7 /* PathLayer.cpp in Sources */,
 				89D68E751DEBE2FD002C7ED8 /* LightningSprite.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				89D68E871DEBE41E002C7ED8 /* Unit.cpp in Sources */,

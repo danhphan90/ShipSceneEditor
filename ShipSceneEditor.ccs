@@ -1018,14 +1018,16 @@
         <Folder Name="NewParticle">
           <PlistParticleFile Name="mainMenuScene_particle.plist" />
         </Folder>
+        <Folder Name="PathLayer">
+          <Project Name="PathReturnX.csd" Type="Layer" />
+          <Project Name="PathReturnY.csd" Type="Layer" />
+        </Folder>
         <Image Name="HelloWorld.png" />
         <Project Name="ItemLayer.csd" Type="Layer" />
         <Project Name="MainScene.csd" Type="Scene" />
         <Project Name="SpriteLayer.csd" Type="Layer" />
         <Project Name="WaveLayer.csd" Type="Layer" />
-        <Folder Name="PathLayer">
-          <Project Name="PathReturn.csd" Type="Layer" />
-        </Folder>
+        <Project Name="PathSelectionLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

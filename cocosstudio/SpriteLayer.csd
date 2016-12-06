@@ -4,13 +4,13 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="61" ctype="GameLayerObjectData">
-        <Size X="300.0000" Y="500.0000" />
+        <Size X="1130.0000" Y="500.0000" />
         <Children>
-          <AbstractNodeData Name="listViewMain" ActionTag="-1571980521" Tag="139" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Enable="True" LeftEage="91" RightEage="91" TopEage="27" BottomEage="27" Scale9OriginX="91" Scale9OriginY="27" Scale9Width="96" Scale9Height="28" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
-            <Size X="300.0000" Y="500.0000" />
+          <AbstractNodeData Name="listViewMain" ActionTag="-1571980521" Tag="139" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="88" ComboBoxIndex="2" ColorAngle="90.0000" Scale9Enable="True" LeftEage="91" RightEage="91" TopEage="27" BottomEage="27" Scale9OriginX="-91" Scale9OriginY="-27" Scale9Width="182" Scale9Height="54" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+            <Size X="1130.0000" Y="500.0000" />
             <Children>
-              <AbstractNodeData Name="listView1" ActionTag="-201593118" Tag="1" IconVisible="False" LeftMargin="25.0000" RightMargin="25.0000" BottomMargin="400.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
-                <Size X="250.0000" Y="100.0000" />
+              <AbstractNodeData Name="listView1" ActionTag="-201593118" Tag="1" IconVisible="False" RightMargin="210.0000" BottomMargin="400.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
+                <Size X="920.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="Panel_4" ActionTag="-107686323" Tag="1" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="920.0000" Y="100.0000" />
@@ -209,30 +209,30 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position X="25.0000" Y="400.0000" />
+                <Position Y="400.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0833" Y="0.8000" />
-                <PreSize X="0.8333" Y="0.2000" />
+                <PrePosition Y="0.8000" />
+                <PreSize X="0.8142" Y="0.2000" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="listView2" ActionTag="-977476580" ZOrder="1" Tag="104" IconVisible="False" LeftMargin="25.0000" RightMargin="25.0000" TopMargin="100.0000" BottomMargin="300.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
-                <Size X="250.0000" Y="100.0000" />
+              <AbstractNodeData Name="listView2" ActionTag="-977476580" ZOrder="1" Tag="104" IconVisible="False" RightMargin="200.0000" TopMargin="100.0000" BottomMargin="300.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
+                <Size X="930.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="Panel_4" ActionTag="513742600" Tag="1" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-                    <Size X="900.0000" Y="100.0000" />
+                    <Size X="930.0000" Y="100.0000" />
                     <Children>
-                      <AbstractNodeData Name="BioSnailC" ActionTag="-1861034219" Tag="106" IconVisible="False" LeftMargin="13.5000" RightMargin="813.5000" TopMargin="13.0000" BottomMargin="13.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="43" Scale9Height="52" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="BioSnailC" ActionTag="-1861034219" Tag="106" IconVisible="False" LeftMargin="13.5000" RightMargin="843.5000" TopMargin="13.0000" BottomMargin="13.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="43" Scale9Height="52" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="73.0000" Y="74.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="50.0000" Y="50.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0556" Y="0.5000" />
-                        <PreSize X="0.0811" Y="0.7400" />
+                        <PrePosition X="0.0538" Y="0.5000" />
+                        <PreSize X="0.0785" Y="0.7400" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="BioSnailC.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="BioSnailC.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -240,14 +240,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="BulbShipB" ActionTag="-1334244842" Tag="112" IconVisible="False" LeftMargin="104.0000" RightMargin="744.0000" TopMargin="18.5000" BottomMargin="18.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="22" Scale9Height="41" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="BulbShipB" ActionTag="-1334244842" Tag="112" IconVisible="False" LeftMargin="104.0000" RightMargin="774.0000" TopMargin="18.5000" BottomMargin="18.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="22" Scale9Height="41" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="52.0000" Y="63.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="130.0000" Y="50.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.1444" Y="0.5000" />
-                        <PreSize X="0.0578" Y="0.6300" />
+                        <PrePosition X="0.1398" Y="0.5000" />
+                        <PreSize X="0.0559" Y="0.6300" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="BulbShipB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="BulbShipB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -255,14 +255,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="ClorbShipB" ActionTag="1636836657" Tag="113" IconVisible="False" LeftMargin="181.0000" RightMargin="681.0000" TopMargin="17.5000" BottomMargin="17.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="8" Scale9Height="43" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="ClorbShipB" ActionTag="1636836657" Tag="113" IconVisible="False" LeftMargin="181.0000" RightMargin="711.0000" TopMargin="17.5000" BottomMargin="17.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="8" Scale9Height="43" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="38.0000" Y="65.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="200.0000" Y="50.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.2222" Y="0.5000" />
-                        <PreSize X="0.0422" Y="0.6500" />
+                        <PrePosition X="0.2151" Y="0.5000" />
+                        <PreSize X="0.0409" Y="0.6500" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="ClorbShipB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="ClorbShipB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -270,14 +270,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="FleaPodB" ActionTag="-144632079" Tag="267" IconVisible="False" LeftMargin="250.0000" RightMargin="610.0000" TopMargin="28.5000" BottomMargin="28.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="10" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="FleaPodB" ActionTag="-144632079" Tag="267" IconVisible="False" LeftMargin="250.0000" RightMargin="640.0000" TopMargin="28.5000" BottomMargin="28.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="10" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="40.0000" Y="43.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="270.0000" Y="50.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.3000" Y="0.5000" />
-                        <PreSize X="0.0444" Y="0.4300" />
+                        <PrePosition X="0.2903" Y="0.5000" />
+                        <PreSize X="0.0430" Y="0.4300" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="FleaPodB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="FleaPodB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -285,14 +285,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="FleaTieB" ActionTag="320419147" Tag="271" IconVisible="False" LeftMargin="306.5000" RightMargin="546.5000" TopMargin="30.0000" BottomMargin="30.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="17" Scale9Height="18" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="FleaTieB" ActionTag="320419147" Tag="271" IconVisible="False" LeftMargin="306.5000" RightMargin="576.5000" TopMargin="30.0000" BottomMargin="30.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="17" Scale9Height="18" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="47.0000" Y="40.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="330.0000" Y="50.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.3667" Y="0.5000" />
-                        <PreSize X="0.0522" Y="0.4000" />
+                        <PrePosition X="0.3548" Y="0.5000" />
+                        <PreSize X="0.0505" Y="0.4000" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="FleaTieB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="FleaTieB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -300,14 +300,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="FleaWingSwingA" ActionTag="1701145004" Tag="274" IconVisible="False" LeftMargin="377.9999" RightMargin="476.0001" TopMargin="27.9044" BottomMargin="30.0956" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="20" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="FleaWingSwingA" ActionTag="1701145004" Tag="274" IconVisible="False" LeftMargin="377.9999" RightMargin="506.0001" TopMargin="27.9044" BottomMargin="30.0956" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="20" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="46.0000" Y="42.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="400.9999" Y="51.0956" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.4456" Y="0.5110" />
-                        <PreSize X="0.0511" Y="0.4200" />
+                        <PrePosition X="0.4312" Y="0.5110" />
+                        <PreSize X="0.0495" Y="0.4200" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="FleaWingSwingA.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="FleaWingSwingA.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -315,14 +315,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="HoofDroneB" ActionTag="-713131392" Tag="278" IconVisible="False" LeftMargin="511.8776" RightMargin="346.1224" TopMargin="24.5004" BottomMargin="24.4996" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="12" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="HoofDroneB" ActionTag="-713131392" Tag="278" IconVisible="False" LeftMargin="511.8776" RightMargin="376.1224" TopMargin="24.5004" BottomMargin="24.4996" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="12" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="42.0000" Y="51.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="532.8776" Y="49.9996" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.5921" Y="0.5000" />
-                        <PreSize X="0.0467" Y="0.5100" />
+                        <PrePosition X="0.5730" Y="0.5000" />
+                        <PreSize X="0.0452" Y="0.5100" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="HoofDroneB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="HoofDroneB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -330,14 +330,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="PincerDroneB" ActionTag="1798066948" Tag="280" IconVisible="False" LeftMargin="576.9969" RightMargin="287.0031" TopMargin="25.0000" BottomMargin="25.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="6" Scale9Height="28" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="PincerDroneB" ActionTag="1798066948" Tag="280" IconVisible="False" LeftMargin="576.9969" RightMargin="317.0031" TopMargin="25.0000" BottomMargin="25.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="6" Scale9Height="28" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="36.0000" Y="50.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="594.9969" Y="50.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.6611" Y="0.5000" />
-                        <PreSize X="0.0400" Y="0.5000" />
+                        <PrePosition X="0.6398" Y="0.5000" />
+                        <PreSize X="0.0387" Y="0.5000" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="PincerDroneB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="PincerDroneB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -345,14 +345,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="TieFighterB" ActionTag="184107060" Tag="282" IconVisible="False" LeftMargin="626.9957" RightMargin="217.0043" TopMargin="25.5004" BottomMargin="25.4996" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="26" Scale9Height="27" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="TieFighterB" ActionTag="184107060" Tag="282" IconVisible="False" LeftMargin="626.9957" RightMargin="247.0043" TopMargin="25.5004" BottomMargin="25.4996" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="26" Scale9Height="27" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="56.0000" Y="49.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="654.9957" Y="49.9996" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.7278" Y="0.5000" />
-                        <PreSize X="0.0622" Y="0.4900" />
+                        <PrePosition X="0.7043" Y="0.5000" />
+                        <PreSize X="0.0602" Y="0.4900" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="TieFighterB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="TieFighterB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -360,14 +360,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="TrilobyteB" ActionTag="-567336008" Tag="93" IconVisible="False" LeftMargin="705.9442" RightMargin="146.0558" TopMargin="20.5003" BottomMargin="20.4997" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="18" Scale9Height="37" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="TrilobyteB" ActionTag="-567336008" Tag="93" IconVisible="False" LeftMargin="705.9442" RightMargin="176.0558" TopMargin="20.5003" BottomMargin="20.4997" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="18" Scale9Height="37" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="48.0000" Y="59.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="729.9442" Y="49.9997" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.8110" Y="0.5000" />
-                        <PreSize X="0.0533" Y="0.5900" />
+                        <PrePosition X="0.7849" Y="0.5000" />
+                        <PreSize X="0.0516" Y="0.5900" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="TrilobyteB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="TrilobyteB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -375,14 +375,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="WaspC" ActionTag="488108212" Tag="97" IconVisible="False" LeftMargin="764.0095" RightMargin="67.9905" TopMargin="11.0004" BottomMargin="10.9996" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="38" Scale9Height="56" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="WaspC" ActionTag="488108212" Tag="97" IconVisible="False" LeftMargin="764.0095" RightMargin="97.9905" TopMargin="11.0004" BottomMargin="10.9996" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="38" Scale9Height="56" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="68.0000" Y="78.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="798.0095" Y="49.9996" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.8867" Y="0.5000" />
-                        <PreSize X="0.0756" Y="0.7800" />
+                        <PrePosition X="0.8581" Y="0.5000" />
+                        <PreSize X="0.0731" Y="0.7800" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="WaspC.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="WaspC.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -390,14 +390,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="WaspXB" ActionTag="613165146" Tag="100" IconVisible="False" LeftMargin="837.7052" RightMargin="-31.7052" TopMargin="9.5003" BottomMargin="9.4997" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="64" Scale9Height="59" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="WaspXB" ActionTag="613165146" Tag="100" IconVisible="False" LeftMargin="837.7052" RightMargin="-1.7052" TopMargin="9.5003" BottomMargin="9.4997" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="64" Scale9Height="59" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="94.0000" Y="81.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="884.7052" Y="49.9997" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.9830" Y="0.5000" />
-                        <PreSize X="0.1044" Y="0.8100" />
+                        <PrePosition X="0.9513" Y="0.5000" />
+                        <PreSize X="0.1011" Y="0.8100" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="WaspXB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="WaspXB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -405,14 +405,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="FleaWingSwingB" ActionTag="1385019973" Tag="496" IconVisible="False" LeftMargin="442.7833" RightMargin="411.2167" TopMargin="27.0000" BottomMargin="27.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="24" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="FleaWingSwingB" ActionTag="1385019973" Tag="496" IconVisible="False" LeftMargin="442.7833" RightMargin="441.2167" TopMargin="27.0000" BottomMargin="27.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="24" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="46.0000" Y="46.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="465.7833" Y="50.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.5175" Y="0.5000" />
-                        <PreSize X="0.0511" Y="0.4600" />
+                        <PrePosition X="0.5008" Y="0.5000" />
+                        <PreSize X="0.0495" Y="0.4600" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="PlistSubImage" Path="FleaWingSwingB.png" Plist="Enemy/EnemySpriteEditor.plist" />
                         <PressedFileData Type="PlistSubImage" Path="FleaWingSwingB.png" Plist="Enemy/EnemySpriteEditor.plist" />
@@ -434,18 +434,18 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position X="25.0000" Y="300.0000" />
+                <Position Y="300.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0833" Y="0.6000" />
-                <PreSize X="0.8333" Y="0.2000" />
+                <PrePosition Y="0.6000" />
+                <PreSize X="0.8230" Y="0.2000" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="listView3" ActionTag="-875593238" ZOrder="2" Tag="107" IconVisible="False" LeftMargin="25.0000" RightMargin="25.0000" TopMargin="200.0000" BottomMargin="200.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
-                <Size X="250.0000" Y="100.0000" />
+              <AbstractNodeData Name="listView3" ActionTag="-875593238" ZOrder="2" Tag="107" IconVisible="False" RightMargin="30.0000" TopMargin="200.0000" BottomMargin="200.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
+                <Size X="1100.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="Panel_4" ActionTag="-1263732273" Tag="1" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="1300.0000" Y="100.0000" />
@@ -645,7 +645,7 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="WaspXC" ActionTag="-358510626" Tag="101" IconVisible="False" LeftMargin="944.7435" RightMargin="251.2566" TopMargin="13.5000" BottomMargin="13.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="74" Scale9Height="51" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="WaspXC" ActionTag="-358510626" Tag="101" IconVisible="False" LeftMargin="944.7435" RightMargin="251.2565" TopMargin="13.5000" BottomMargin="13.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="74" Scale9Height="51" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="104.0000" Y="73.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="996.7435" Y="50.0000" />
@@ -704,18 +704,18 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position X="25.0000" Y="200.0000" />
+                <Position Y="200.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0833" Y="0.4000" />
-                <PreSize X="0.8333" Y="0.2000" />
+                <PrePosition Y="0.4000" />
+                <PreSize X="0.9735" Y="0.2000" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="listView4" ActionTag="-1737241685" ZOrder="3" Tag="116" IconVisible="False" LeftMargin="25.0000" RightMargin="25.0000" TopMargin="300.0000" BottomMargin="100.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
-                <Size X="250.0000" Y="100.0000" />
+              <AbstractNodeData Name="listView4" ActionTag="-1737241685" ZOrder="3" Tag="116" IconVisible="False" RightMargin="360.0000" TopMargin="300.0000" BottomMargin="100.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
+                <Size X="770.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="Panel_4" ActionTag="905729522" Tag="2" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="770.0000" Y="100.0000" />
@@ -884,18 +884,18 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position X="25.0000" Y="100.0000" />
+                <Position Y="100.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0833" Y="0.2000" />
-                <PreSize X="0.8333" Y="0.2000" />
+                <PrePosition Y="0.2000" />
+                <PreSize X="0.6814" Y="0.2000" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="listView5" ActionTag="1302635581" ZOrder="4" Tag="3" IconVisible="False" LeftMargin="25.0000" RightMargin="25.0000" TopMargin="400.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
-                <Size X="250.0000" Y="100.0000" />
+              <AbstractNodeData Name="listView5" ActionTag="1302635581" ZOrder="4" Tag="3" IconVisible="False" RightMargin="760.0000" TopMargin="400.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
+                <Size X="370.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="Panel_4" ActionTag="882622250" Tag="3" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="370.0000" Y="100.0000" />
@@ -974,11 +974,11 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position X="25.0000" />
+                <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0833" />
-                <PreSize X="0.8333" Y="0.2000" />
+                <PrePosition />
+                <PreSize X="0.3274" Y="0.2000" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
@@ -991,8 +991,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="NewMissionSceneResource/backtotopnormal.png" Plist="" />
-            <SingleColor A="255" R="150" G="150" B="255" />
+            <SingleColor A="255" R="191" G="191" B="191" />
             <FirstColor A="255" R="150" G="150" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />

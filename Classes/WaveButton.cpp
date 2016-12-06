@@ -26,10 +26,13 @@ bool WaveButton::init(){
     this->setTitleFontSize(18);
     this->setName(StringUtils::format("Wave %zd",_indexWave));
     this->setTitleText(StringUtils::format("Wave %zd",_indexWave));
+    this->setScale(0.8);
     _indexWave++;
     
     panelInfo = WaveLayer::create();
     panelInfo->retain();
+    
+    panelInfo->setTag(_indexWave+1);
     return true;
 }
 

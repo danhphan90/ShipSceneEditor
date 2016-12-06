@@ -19,16 +19,19 @@ using namespace std;
 using namespace cocos2d;
 using namespace cocos2d::ui;
 
-
+enum WaveLayerChild{
+    WaveLayerChild_tagBtnSprite = 204,
+    WaveLayerChild_tagBtnItem = 9
+};
 
 class WaveLayer : public Layer{
 public:
     WaveLayer();
     
-    void open();
-    void close();
     void clear();
 
+    static void saveMainPanel(ImageView* _panel);
+    
     CREATE_FUNC(WaveLayer);
     
     CC_SYNTHESIZE(std::string, spriteName, SpriteName);
@@ -48,13 +51,7 @@ private:
     
     Vector<TextField*> vecField;
     
-    EventListenerTouchOneByOne* _event;
-    
-    Text* txtSpriteType;
-    Text* txtSpriteName;
-    Text* itemItemCount;
-    Text* itemItemType;
-    
+    ImageView* imgFieldItemCount;
 
     virtual bool init();
     void saveChildToLocalVariable();
@@ -68,10 +65,6 @@ private:
     
     void callBackButton(Ref* pSender, Widget::TouchEventType type);
     
-    
-    bool onTouchBegan(Touch* touch, Event* event);
-   	void onTouchMoved(Touch* touch, Event* event);
-   	void onTouchEnded(Touch* touch, Event* event);
     
     void callBackClose();
     void callBackBtnSprite();

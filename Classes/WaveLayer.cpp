@@ -14,20 +14,14 @@ USING_NS_CC;
 
 using namespace cocostudio::timeline;
 
+static ImageView* _mainPanel = NULL;
+
+void WaveLayer::saveMainPanel(cocos2d::ui::ImageView *_panel){
+    _mainPanel = _panel;
+}
+
 WaveLayer::WaveLayer(){
 
-}
-
-void WaveLayer::open(){
-    this->setVisible(true);
-    getEventDispatcher()->addEventListenerWithSceneGraphPriority(_event, this);
-}
-
-void WaveLayer::close(){
-    auto _callBackClose = CallFuncN::create(CC_CALLBACK_0(WaveLayer::callBackClose, this));
-    this->runAction(Sequence::create(EaseElasticOut::create(ScaleTo::create(0.5, 0.),0.5),
-                                         _callBackClose, NULL));
-    
 }
 
 void WaveLayer::clear(){
@@ -35,7 +29,6 @@ void WaveLayer::clear(){
         vecField.clear();
 
     }
-    _event->release();
     spriteSelectionLayer->clear();
     spriteSelectionLayer->release();
     this->removeAllChildren();
@@ -53,9 +46,9 @@ bool WaveLayer::init(){
     coinSelectionLayer = CoinLayer::create();
     coinSelectionLayer->retain();
     
-    this->setContentSize(Size(300,500));
-    
     rootNode = CSLoader::createNode("WaveLayer.csb");
+
+    this->setContentSize(rootNode->getContentSize());
     
     this->addChild(rootNode);
     
@@ -69,35 +62,27 @@ bool WaveLayer::init(){
 
 void WaveLayer::saveChildToLocalVariable(){
     panel = (Layout*)rootNode->getChildByTag(16);
-    btnSprite = (Button*)panel->getChildByTag(0);
-    
-    txtSpriteType = (Text*)panel->getChildByTag(69);
-    txtSpriteName = (Text*)panel->getChildByTag(497);
+    btnSprite = (Button*)panel->getChildByTag(WaveLayerChild::WaveLayerChild_tagBtnSprite);
+    btnItem = (Button*)panel->getChildByTag(WaveLayerChild::WaveLayerChild_tagBtnItem);
     
     for(int i = 1; i < 9;i++){
-        auto _text = (Text*)panel->getChildByTag(i);
-        if (_text != NULL){
-            auto _img = (ImageView*)_text->getChildByTag(i);
-            if (_img != NULL){
-                auto _field = (TextField*)_img->getChildByTag(i);
-                
-                if (_field != NULL){
-                    vecField.pushBack(_field);
-                }
+        auto _img = (ImageView*)panel->getChildByTag(i);
+        if (_img != NULL){
+            auto _field = (TextField*)_img->getChildByTag(i);
+            
+            if (_field != NULL){
+                vecField.pushBack(_field);
             }
         }
     }
     
-    itemItemCount = (Text*)panel->getChildByTag(8);
-    itemItemType = (Text*)panel->getChildByTag(9);
-    
-    btnItem = (Button*)itemItemType->getChildByTag(9);
+    imgFieldItemCount = (ImageView*)panel->getChildByTag(8);
 }
 
 
 void WaveLayer::modifyLocalVariable(){
-    itemItemCount->setVisible(false);
-    itemItemType->setVisible(false);
+    imgFieldItemCount->setVisible(false);
+    btnItem->setVisible(false);
 }
 
 void WaveLayer::modifyButtonEvent(){
@@ -106,12 +91,7 @@ void WaveLayer::modifyButtonEvent(){
 }
 
 void WaveLayer::modifyTouchEvent(){
-    _event = EventListenerTouchOneByOne::create();
-    _event->onTouchBegan = CC_CALLBACK_2(WaveLayer::onTouchBegan, this);
-    _event->onTouchMoved = CC_CALLBACK_2(WaveLayer::onTouchMoved, this);
-    _event->onTouchEnded = CC_CALLBACK_2(WaveLayer::onTouchEnded, this);
-    _event->setSwallowTouches(true);
-    _event->retain();
+
 }
 
 void WaveLayer::modifyOtherEvent(){
@@ -124,38 +104,16 @@ int WaveLayer::getValue(PropertiesTag type){
     return _s->intValue();
 }
 
-bool WaveLayer::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event){
-    
-    return true;
-}
-
-void WaveLayer::onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event){
-    
-}
-
-void WaveLayer::onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event){
-    if (!rootNode->getBoundingBox().containsPoint(touch->getLocation())){
-        this->close();
-    }
-}
-
-void WaveLayer::callBackClose(){
-    this->setVisible(false);
-    this->removeFromParent();
-    getEventDispatcher()->removeEventListener(_event);
-    this->setScale(1);
-}
-
 void WaveLayer::callBackBtnSprite(){
     spriteSelectionLayer->open();
-    this->addChild(spriteSelectionLayer,1);
-    spriteSelectionLayer->setPosition(-300, 0);
+    _mainPanel->addChild(spriteSelectionLayer,3);
+    spriteSelectionLayer->setPosition(120, 250);
 }
 
 void WaveLayer::callBackBtnItem(){
     coinSelectionLayer->open();
-    this->addChild(coinSelectionLayer,1);
-    coinSelectionLayer->setPosition(-20, -120);
+    this->addChild(coinSelectionLayer,3);
+    coinSelectionLayer->setPosition(540,0);
 }
 
 void WaveLayer::callBackSpriteSelection(std::string _spriteName, SpriteType type){
@@ -165,34 +123,30 @@ void WaveLayer::callBackSpriteSelection(std::string _spriteName, SpriteType type
     
     btnSprite->loadTextures(_path,_path,_path,Widget::TextureResType::PLIST);
     
-    txtSpriteName->setString(_spriteName);
+    
+    setSpriteName(_spriteName);
+    setSpriteType(type);
+    
     
     switch (type) {
         case ANIMATED:
-            txtSpriteType->setString("Animated");
-            itemItemCount->setVisible(false);
-            itemItemType->setVisible(false);
-            break;
-        
         case NON_ANIMATED:
-            txtSpriteType->setString("Non-Animated");
-            itemItemCount->setVisible(false);
-            itemItemType->setVisible(false);
+        {
+            imgFieldItemCount->setVisible(false);
+            btnItem->setVisible(false);
+        }
             break;
             
         case SPECIAL:
-            txtSpriteType->setString("Special");
-            itemItemCount->setVisible(true);
-            itemItemType->setVisible(true);
+        {
+            imgFieldItemCount->setVisible(true);
+            btnItem->setVisible(true);
+        }
             break;
-
             
         default:
             break;
     }
-    
-    setSpriteName(_spriteName);
-    setSpriteType(type);
 }
 
 void WaveLayer::callBackItemSelection(std::string _itemName, TypeCoin type){
@@ -213,13 +167,13 @@ void WaveLayer::callBackButton(cocos2d::Ref *pSender, Widget::TouchEventType typ
     switch (type) {
         case cocos2d::ui::Widget::TouchEventType::ENDED:
             switch (_button->getTag()) {
-                case 0:
+                case WaveLayerChild_tagBtnSprite:
                 {
                     this->callBackBtnSprite();
                     break;
                 }
                     
-                case 9:
+                case WaveLayerChild_tagBtnItem:
                 {
                     this->callBackBtnItem();
                     break;

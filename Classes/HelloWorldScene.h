@@ -60,6 +60,7 @@ private:
     void saveChildToLocalVariable();
     void modifyLocalVariable();
     void modifyButtonEvent();
+    void modifyOtherEvents();
     
     Layout* createButtonWave();
     
